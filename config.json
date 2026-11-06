@@ -1,0 +1,54 @@
+{
+  "region": [
+    19,
+    96,
+    821,
+    814
+  ],
+  "window_title": "",
+  "fps": 3.0,
+  "show_border": true,
+  "border_color": [
+    255,
+    40,
+    40
+  ],
+  "border_alpha": 35,
+  "output_idx": 0,
+  "hotkeys": {
+    "toggle_monitor": "ctrl+alt+r",
+    "select_region": "ctrl+alt+s",
+    "adjust_region": "ctrl+alt+a",
+    "test_speech": "ctrl+alt+t"
+  },
+  "tts": {
+    "engine": "edge-tts",
+    "voice": "zh-CN-XiaoxuanNeural",
+    "rate": "+50%",
+    "volume": "+0%",
+    "output_device": ""
+  },
+  "reader": {
+    "queue_size": 30,
+    "min_length": 2,
+    "history_size": 300,
+    "dedupe_consecutive": true,
+    "read_all": true,
+    "read_tag": "【朗读】",
+    "merge_short_max_chars": 12,
+    "batch_size": 4,
+    "batch_timeout": 2.0,
+    "batch_max_chars": 200
+  },
+  "filters": {
+    "drop_punct_only": true,
+    "drop_digits_only": true,
+    "drop_bracket_only": true,
+    "drop_patterns": []
+  },
+  "phash_threshold": 10,
+  "force_ocr_interval": 2.0,
+  "warmup_on_start": true,
+  "auto_start": false,
+  "log_level": "INFO"
+}

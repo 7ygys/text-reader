@@ -1,0 +1,20 @@
+# 屏幕区域实时文字朗读工具 - 依赖清单
+# 支持 Python 3.8+，已在 Python 3.14 下验证安装
+# 界面采用 PySide6(Qt6)，因 PyQt5(Qt5.15) 在 Python 3.14 下创建 QApplication 会原生崩溃(0xC0000409)
+PySide6>=6.6.0
+# 画面采集 | windows-capture 主（DXGI/WGC，对全屏/独占游戏兼容性更好），dxcam + mss 后备
+windows-capture>=2.0.0
+dxcam>=0.0.5
+mss>=9.0.1
+opencv-python>=4.8.0
+numpy>=1.24
+# OCR：新版 rapidocr(3.x) 为主；如需旧版可改回 rapidocr-onnxruntime
+rapidocr>=3.9.0
+onnxruntime>=1.20
+edge-tts>=6.1.0
+pyttsx3>=2.90
+# 音频播放：主程序用 pygame(SDL) 在 Qt 主线程播放（经信号桥接，规避后台线程崩溃与 MCI 静默无声）
+pygame-ce>=2.5.0
+pystray>=0.19.4
+keyboard>=0.13.5
+Pillow>=10.0.0
